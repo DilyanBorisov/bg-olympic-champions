@@ -1,0 +1,79 @@
+.App {
+  margin-left: 0px;
+  font-family: 'Times New Roman', Times, serif;
+  /* justify-content: space-evenly; */
+  text-align: center;
+}
+
+img {
+  max-width: 130px;
+  max-height: 120px;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width: 520px;
+  font-style: italic;
+  padding: 5px;
+  margin: 15px;
+  display: block;
+}
+
+label {
+  font-style: italic;
+  font-size: large;
+}
+
+h1 {
+  color: crimson;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  font-family: fantasy;
+  font-weight: 400;
+}
+
+.card {
+  vertical-align: top;
+  color: white;
+  font-weight: 230;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  line-height: 25px;
+  text-shadow: 0 0 15px black;
+  text-transform: capitalize;
+  text-align: center;
+  border: ;
+  box-shadow: crimson 10px 10px;
+  background-color: forestgreen;
+  margin: 10px;
+  margin: 15px;
+  padding: 15px;
+  /* display: flex; */
+  display: inline-block;
+  border-radius: 10px;
+  height: 200px;
+  width: 165px;
+}
+
+text {
+  font-size: large;
+  font-style: italic;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.301);
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 15px;
+}
+
+a {
+  color: rgb(41, 100, 226);
+  padding-inline: 40px;
+}
