@@ -1,3 +1,7 @@
+<img src='https://i.postimg.cc/nh3TbJZz/olympics.png'></img>
+
+_____________________________________________________________________________________________________
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
