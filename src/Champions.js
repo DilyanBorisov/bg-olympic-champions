@@ -400,7 +400,7 @@ const champions = {
             all: 'all',
         },
         {
-            champName: 'yanko rusev',
+            champName: 'nikola stanchev',
             sport: 'weightlifting',
             games: 'melbourne 1956',
             img: '../pics/nikolastanchev.jpg',
