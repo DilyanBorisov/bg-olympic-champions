@@ -5,7 +5,6 @@ import { useState } from 'react';
 import champions from './Champions.js';
 import rings from './rings.png';
 
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -26,35 +25,78 @@ class App extends Component {
     }
     )
 
+    let sports = [...new Set(champions.Champs.map(item => item.sport))]
+
+    let games = [...new Set(champions.Champs.map(item => item.games))]
+
     return (
       <div className='App' >
         <h1>Olympic Champions of Bulgaria</h1>
         <img src={rings}></img>
-        <br />
-        <br />
-        <form>
-          <label>
-            Filter by athlete's name, sport or olympic games (e.g. "Barcelona 1992"):
-            <input
-              id='search'
-              value={this.state.search}
-              onChange={this.handleInput}
-              type='text'
-              placeholder='To show all atheltes just type "all"'
-              autoComplete='off'
-            />
-          </label>
-        </form>
-        <text>Athletes are listed in alphabetical order by their surname: <br /></text>
-        {filteredChampions.map((champion) => (
-          <div className='card'>
-            <img src={champion.img}></img>
-            <div className='text'>{champion.champName}</div>
-            <div className='text'>{champion.sport}</div>
-            <div className='text'>{champion.games}</div>
-          </div>
-        )
-        )
+
+        <table>
+          <tr>
+            <td className='colOne'>
+              {sports.map((sport) => (
+                <button
+                  id='search'
+                  value={sport}
+                  onClick={this.handleInput}
+                >
+                  {sport}</button>
+              )
+              )
+              }
+            </td>
+
+            <td className='colTwo'>
+              {games.map((game) => (
+                <button
+                  id='search'
+                  value={game}
+                  onClick={this.handleInput}
+                >
+                  {game}</button>
+              )
+              )
+              }
+            </td>
+
+            <td classNam='colThree'>
+
+              <button
+                id='search'
+                value='all'
+                onClick={this.handleInput}>
+                SHOW ALL</button>
+
+              <form>
+                <label>
+                  Athlete's name:
+                  <input
+                    id='search'
+                    value={this.state.search}
+                    onChange={this.handleInput}
+                    type='text'
+                    placeholder="Athlete's name"
+                    autoComplete='off'
+                  />
+                </label>
+              </form>
+            </td>
+          </tr>
+        </table>
+
+        {
+          filteredChampions.map((champion) => (
+            <div className='card'>
+              <img src={champion.img}></img>
+              <div className='text'>{champion.champName}</div>
+              <div className='text'>{champion.sport}</div>
+              <div className='text'>{champion.games}</div>
+            </div>
+          )
+          )
         }
         <footer>
           <br />
