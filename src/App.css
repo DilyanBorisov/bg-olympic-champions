@@ -18,7 +18,7 @@ form {
 }
 
 input {
-  width: 520px;
+  /* width: 520px; */
   font-style: italic;
   padding: 5px;
   margin: 15px;
@@ -27,7 +27,7 @@ input {
 
 label {
   font-style: italic;
-  font-size: large;
+  /* font-size: large; */
 }
 
 h1 {
@@ -48,7 +48,6 @@ h1 {
   text-shadow: 0 0 15px black;
   text-transform: capitalize;
   text-align: center;
-  border: ;
   box-shadow: crimson 10px 10px;
   background-color: forestgreen;
   margin: 10px;
@@ -61,13 +60,8 @@ h1 {
   width: 165px;
 }
 
-text {
-  font-size: large;
-  font-style: italic;
-}
-
 footer {
-  background-color: rgba(0, 0, 0, 0.301);
+  background-color: rgba(0, 0, 0, 0.200);
   text-align: center;
   margin-top: 30px;
   padding-bottom: 15px;
@@ -76,4 +70,54 @@ footer {
 a {
   color: rgb(41, 100, 226);
   padding-inline: 40px;
+}
+
+.mymenu {
+  height: 50px;
+  color: red;
+}
+
+
+table {
+  display: flex;
+  /* align-items: stretch; */
+  justify-content: space-evenly;
+  /* border-collapse: separate; */
+  border-spacing: 50px;
+}
+
+td {
+  background-color: rgba(0, 0, 0, 0.200);
+  /* border: 2px;
+  border-style: solid;
+  border-color: black; */
+  border-radius: 15px;
+  padding: 10px;
+  display: inline-flexbox;
+  max-width: 700px;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-evenly; */
+}
+
+.colOne {
+  max-width: 450px;
+}
+
+/* .colTwo {
+  max-width: 350px;
+} */
+
+.colThree {
+  max-width: 350px;
+}
+
+button {
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  text-transform: capitalize;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 8px;
+  border-style: none;
 }
